@@ -11,6 +11,10 @@
     *::after {
         box-sizing: border-box;
     }
+
+    img {
+        max-width: 100%;
+    }
 }
 
 @layer theme {
@@ -41,5 +45,16 @@
         font-family: 'Figtree', sans-serif;
         font-size: var(--font-md);
         background-color: var(--primary-color);
+        min-height: 100svh;
+        display: grid;
+        place-items: center;
+    }
+}
+
+@layer module {
+    .card {
+        margin-inline: 24px;
+        background-color: var(--white);
+        padding: 24px;
     }
 }
