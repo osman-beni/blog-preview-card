@@ -66,6 +66,11 @@
         border: 1px solid var(--gray-950);
         min-width: 327px;
         max-width: 384px;
+        transition: all .2s ease;
+    }
+
+    .card:hover {
+        box-shadow: 16px 16px 0 0 var(--gray-950);
     }
 
     .card > * + * {
@@ -100,6 +105,12 @@
     .card__content h1 {
         font-size: 1.25rem;
         margin-block: var(--spacing-md);
+        cursor: pointer;
+        transition: color .2s ease;
+    }
+
+    .card__content h1:hover {
+        color: var(--primary-color);
     }
 
     .card__content p {
